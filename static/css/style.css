@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     padding: 0;
     margin: 0;
     font-family: verdana, arial, sans-serif;
@@ -11,6 +11,8 @@ body{
     align-content: center;
     justify-content: center;
     height: 100%;
+
+    background-color: blue;
 }
 
 main{
@@ -32,4 +34,8 @@ footer{
     display: block;
     min-height: 70px;
     border: 1px solid grey;
+} */
+
+body{
+    color: red;
 }

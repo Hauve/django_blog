@@ -1,14 +1,14 @@
 {% load static %}
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="all">
     <title>Блог</title>
 </head>
 <body>
-    <header>БЛОГ</header>
-    <main>
+    <div class="header">БЛОГ</div>
+    <div class="main">
             {% for post in post_list %}
                 <article>
                 <h3>{{ post.title }}</h3>
@@ -16,8 +16,8 @@
                 <small>{{ post.author }}</small>
                 </article>
             {% endfor %}
-    </main>
+    </div>
 
-    <footer>Подвал</footer>
+    <div class="footer">Подвал</div>
 </body>
 </html>
